@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: Pangolin, cursive;
+}
+
+.titulo {
+    font-family: 'Times New Roman', serif;
+}
+
+.contents {
+    background-color: #faeee7;
+}
+
+.contents > .titulo{
+    color: #33272a;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
