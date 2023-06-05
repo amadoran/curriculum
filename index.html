@@ -9,31 +9,43 @@
     <meta name="keywords" content="Curriculum, Developer">
     <meta name="author" content="Andrés Amador">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@300&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
     <title>Curriculum Vitae</title>
 </head>
 
 <body>
-    <header>
-        <h1>Andrés Amador</h1>
+    <header class="headsticky">
+        <nav class="navflex">
+            <a href="#PersonalInformation">Información Personal</a>
+            <a href="#Education">Educación</a>
+            <a href="#Experience">Experiencia</a>
+            <a href="#Skills">Habilidades</a>
+            <a href="#Projects">Proyectos</a>
+        </nav>
     </header>
-    <img src="https://placehold.co/300x400" alt="Foto del autor">
-    <nav>
-        <ul>    
-            <li><a href="#PersonalInformation">Información Personal</a></li>
-            <li><a href="#Education">Educación</a></li>
-            <li><a href="#Skills">Habilidades</a></li>
-            <li><a href="#Projects">Proyectos</a></li>
-        </ul>    
-    </nav>
     <main>
         <section>
-            <h2 id="PersonalInformation">Información Personal</h2>
+            <img src="images/57407317_2321516167907531_4135372002112307200_n.jpg" alt="Foto del autor" id="profilepic">
+        </section>
+        <section>
+            <h1 id="name">Andrés Amador</h1>
+        </section>
+        <section>
+            <h2>Información Personal</h2>
+        </section>
+        <section>
             <p>Name: Andrés Amador</p>
             <p>Email: amadoran@outlook.com</p>
             <p>Phone: +593-995014786</p>
         </section>
-        <section class="contents">
-            <h2 class="titulo">Educación</h2>
+        <section>
+            <h2>Educación</h2>
+        </section>
+        <section>
             <table>
                 <caption>Bachillerato</caption>
                 <tr>
@@ -66,7 +78,9 @@
             </table>
         </section>
         <section>
-            <h2 id="Experience">Experiencia</h2>
+            <h2>Experiencia</h2>
+        </section>
+        <section>
             <ul>
                 <li>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -76,70 +90,56 @@
             </ul>
         </section>
         <section>
-            <h2 id="Skills">Habilidades</h2>
+            <h2>Habilidades</h2>
+        </section>
+        <section>
             <p>Programming Languages: Java, Python, JavaScript.</p>
             <p>Operating Systems: Linux, Windows.</p>
             <p>Databases: MySQL.</p>
         </section>
         <section>
-            <h2 id="Projects">Proyectos</h2>
+            <h2>Proyectos</h2>
+        </section>
+        <section>
             <p>Juego para niños para el aprendizaje de árboles binarios.</p>
         </section>
         <section>
-            <h2 id="Idiomas">Lenguas</h2>
+            <h2>Lenguas</h2>
+        </section>
+        <section>
             <ul>
-                <li><p>Español (Nativo)</p></li>
-                <li><p>Inglés (B2)</p></li>
+                <li>
+                    <p>Español (Nativo)</p>
+                </li>
+                <li>
+                    <p>Inglés (B2)</p>
+                </li>
             </ul>
         </section>
 
-        <section>
+
+        <!-- <section>
             <video src="https://placehold.co/1920x1080.mp4" controls></video>
-        </section>
+        </section> -->
     </main>
     <form>
-        <table border="1">
-            <caption><h2>Contáctame</h2></caption>
-            <tr>
-                <th>
-                    <label for="nombrescompletos">Nombres completos:</label>
-                </th>
-                <td>
-                    <input type="text" id="nombrescompletos" name="nombrescompletos" required>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="email">Email:</label>
-                </th>
-                <td>
-                    <input type="email" id="email" name="email" required>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="numerotelefonico">Teléfono:</label>
-                </th>
-                <td>
-                    <input type="tel" name="numerotelefonico" id="numerotelefonico">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="description">Descripción</label>
-                </th>
-                <td>
-                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-                </td>
-            </tr>
-        </table>
-        <section id="buttonform">
-            <button type="submit" name="enviar">Enviar</button>
-            <button type="reset" name="cancelar">Cancelar</button>
-        </section>
+        <h2>Contáctame</h2>
+        <label for="nombrescompletos">Nombres completos:</label>
+        <input type="text" id="nombrescompletos" name="nombrescompletos" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="numerotelefonico">Teléfono:</label>
+        <input type="tel" name="numerotelefonico" id="numerotelefonico">
+        <label for="description">Descripción</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <button type="submit" name="enviar">Enviar</button>
+        <button type="reset" name="cancelar">Cancelar</button>
     </form>
     <h2>Búscame:</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9721417012074!2d-79.91729702407625!3d-2.1643025372180733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9a77b17a57%3A0x36b69d6d087b1bef!2sManexware%20S.A.!5e0!3m2!1ses!2sec!4v1684784538778!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9721417012074!2d-79.91729702407625!3d-2.1643025372180733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9a77b17a57%3A0x36b69d6d087b1bef!2sManexware%20S.A.!5e0!3m2!1ses!2sec!4v1684784538778!5m2!1ses!2sec"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>Copyright &copy; 2023</p>
     </footer>
