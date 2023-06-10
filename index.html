@@ -25,6 +25,7 @@
             <a href="#Experience">Experiencia</a>
             <a href="#Skills">Habilidades</a>
             <a href="#Projects">Proyectos</a>
+            <a href="#Languages">Idiomas</a>
         </nav>
     </header>
     <main>
@@ -37,62 +38,38 @@
         <section>
             <h2>Información Personal</h2>
         </section>
-        <section>
-            <p>Name: Andrés Amador</p>
+        <section id="PersonalInformation" class="right-content">
             <p>Email: amadoran@outlook.com</p>
             <p>Phone: +593-995014786</p>
         </section>
         <section>
             <h2>Educación</h2>
         </section>
-        <section>
-            <table>
-                <caption>Bachillerato</caption>
-                <tr>
-                    <th>Institución:</th>
-                    <td>Unidad Educativa Salesiana Cristobal Colón</td>
-                </tr>
-                <tr>
-                    <th>Título:</th>
-                    <td>Bachiller en ciencias</td>
-                </tr>
-                <tr>
-                    <th>Periodo:</th>
-                    <td>2017-2019</td>
-                </tr>
-            </table>
-            <table>
-                <caption>Educación Superior</caption>
-                <tr>
-                    <th>Institución:</th>
-                    <td>Escuela Superior Politecnica del Litoral</td>
-                </tr>
-                <tr>
-                    <th>Título:</th>
-                    <td>Ingeniero en ciencias computacionales</td>
-                </tr>
-                <tr>
-                    <th>Periodo:</th>
-                    <td>2020-Actualidad</td>
-                </tr>
-            </table>
+        <section id="Education" class="right-content">
+            <p>Bachillerato</p>
+                <p><b>Institución:</b> Unidad Educativa Salesiana Cristobal Colón<br>
+                <b>Título:</b> Bachiller en ciencias<br>
+                <b>Periodo:</b> 2017-2019</p>
+            <p>Educación Superior</p>
+                <p><b>Institución:</b> Escuela Superior Politecnica del Litoral<br>
+                <b>Título:</b> Ingeniero en ciencias computacionales<br>
+                <b>Periodo:</b> 2020-Actualidad</p>
         </section>
         <section>
             <h2>Experiencia</h2>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>adipisicing elit. Incidunt excepturi ducimus nemo.</p>
-                    <p>Modi provident similique et aut minus dolorem reiciendis tempora dolorum.</p>
-                </li>
-            </ul>
+        <section id="Experience" class="right-content">
+            <p>
+                Practicante desarrollador<br>
+                Manexware<br>
+                2023-Actualidad 
+            </p>
+            
         </section>
         <section>
             <h2>Habilidades</h2>
         </section>
-        <section>
+        <section id="Skills" class="right-content">
             <p>Programming Languages: Java, Python, JavaScript.</p>
             <p>Operating Systems: Linux, Windows.</p>
             <p>Databases: MySQL.</p>
@@ -100,13 +77,13 @@
         <section>
             <h2>Proyectos</h2>
         </section>
-        <section>
+        <section id="Projects" class="right-content">
             <p>Juego para niños para el aprendizaje de árboles binarios.</p>
         </section>
         <section>
             <h2>Lenguas</h2>
         </section>
-        <section>
+        <section id="Languages">
             <ul>
                 <li>
                     <p>Español (Nativo)</p>
@@ -116,30 +93,37 @@
                 </li>
             </ul>
         </section>
-
-
-        <!-- <section>
-            <video src="https://placehold.co/1920x1080.mp4" controls></video>
-        </section> -->
     </main>
+    <section class="video">
+        <h2>Resumen:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bqqCTC9nQDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
     <form>
-        <h2>Contáctame</h2>
-        <label for="nombrescompletos">Nombres completos:</label>
-        <input type="text" id="nombrescompletos" name="nombrescompletos" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="numerotelefonico">Teléfono:</label>
-        <input type="tel" name="numerotelefonico" id="numerotelefonico">
-        <label for="description">Descripción</label>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        <button type="submit" name="enviar">Enviar</button>
-        <button type="reset" name="cancelar">Cancelar</button>
+        <div class="wrapper">
+            <h2>Contáctame</h2>
+                <div class="form-grid">
+                    <div class="item"><label for="nombrescompletos">Nombres completos:</label></div>
+                    <div class="item"><input type="text" id="nombrescompletos" name="nombrescompletos" required></div>
+                    <div class="item"><label for="email">Email:</label></div>
+                    <div class="item"><input type="email" id="email" name="email" required></div>
+                    <div class="item"><label for="numerotelefonico">Teléfono:</label></div>
+                    <div class="item"><input type="tel" name="numerotelefonico" id="numerotelefonico"></div>
+                    <div class="item"><label for="description">Descripción:</label></div>
+                    <div class="item"><textarea name="description" id="description" cols="30" rows="10"></textarea></div>
+                </div>
+            <div class="button-box">
+                <button type="submit" name="enviar">Enviar</button>
+                <button type="reset" name="cancelar">Cancelar</button>
+            </div>
+        </div>
     </form>
-    <h2>Búscame:</h2>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9721417012074!2d-79.91729702407625!3d-2.1643025372180733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9a77b17a57%3A0x36b69d6d087b1bef!2sManexware%20S.A.!5e0!3m2!1ses!2sec!4v1684784538778!5m2!1ses!2sec"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="map">
+        <h2>Búscame:</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9721417012074!2d-79.91729702407625!3d-2.1643025372180733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9a77b17a57%3A0x36b69d6d087b1bef!2sManexware%20S.A.!5e0!3m2!1ses!2sec!4v1684784538778!5m2!1ses!2sec"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
         <p>Copyright &copy; 2023</p>
     </footer>
